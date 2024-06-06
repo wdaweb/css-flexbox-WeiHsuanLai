@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: '微軟正黑體';
+        }
+        #top{
+            width: 100%;
+            height: 56px;
+            background: rgb(37, 37, 37);
+            color: white;
+        }
+
+        .d-flex {
+        /* 宣告父元素為彈性盒 */
+        display: flex;
+
+        /* 預設主軸為水平流向排列，彈性項目會水平排列 */
+        flex-direction: row;
+
+        /* 預設 nowrap 不會換行 */
+        flex-wrap: nowrap;
+
+        /* 預設主軸(main axis) 的對齊點為 main-start */
+        justify-content: flex-start;
+
+        /* 預設次軸(cross axis) stretch 將彈性項目延伸拉長 */
+        align-items: stretch;
+        }
+
+        .width{
+            width: 1224px;
+            height: auto;
+            margin: auto;
+        }
+        .space-between{
+            justify-content:space-between;
+        }
+
+        .space-around{
+            justify-content: space-around;
+        }
+        .row{
+            flex-direction: row;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        #top_right div{
+            margin: 1rem;
+            font-size: 16px;
+        }
+
+        #top_right a{
+            text-decoration: none;
+        }
+
+        #top_left{
+            font-size: 20px;
+        }
+        
+        .Twhite{
+            color: white;
+        }
+        .Tgray{
+            color: rgb(162, 162, 199);
+            text-decoration: none;
+        }
+        .Tgray:hover{
+            color: rgb(208, 208, 208);
+            text-decoration: none;
+        }
+        .align-self-center {
+            align-self: center;
+        }
+        .align-item-center{
+            align-items: center;
+        }
+        .content-center{
+            justify-content: center;
+        }
+        #WxH{
+            width: 694px;
+            height: 308px;
+            background: rgb(219, 219, 222);
+            border-radius: 10px;
+            font-size: 70px;
+            text-align: center;
+            line-height: 308px;
+            color: rgb(105, 105, 105);
+            font-weight: 200;
+        }
+        .mg20{
+           margin: 48px 0 24px; 
+        }
+        #Ctop{
+            gap: 48px;
+        }
+        #BNoT{
+            width: 530px;
+            height: 308px;
+        }
+
+        #BNoT h1{
+            font-size: 40px;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        #BNoT p{
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        #BNoT a{
+            width: 115px;
+            height: 24px;
+            padding: 6px 12px 6px;
+            background: #0d6efd;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        #BNoT a:hover{
+            background: #0a58ca;
+        }
+        #Ccontent{
+            width: 1224px;
+            height: 130px;
+            margin: 24px 0 24px;
+            background: rgb(124, 125, 133);
+            color: white;
+            border-radius: 10px;
+        }
+        .card{
+            width: 376px;
+            height: 249px;
+            margin: 24px 0 24px;
+        }
+        .cardtop{
+            padding: 20px 20px 0;
+            height: 199px;
+            border-radius: 10px 10px 0px 0px;
+            border: 1px solid rgb(215, 215, 215);
+        }
+        .cardtop h2{
+            font-size: 35px;
+        }
+        .cardtop p{
+            font-size: 16px;
+        }
+        .cardfooter{
+            height: 50px;
+            border-radius: 0px 0px 10px 10px;
+            border: 1px solid rgb(215, 215, 215);
+            background: rgb(235, 235, 235);
+        }
+        #Cfooter a{
+            display: block;
+            text-align: center;
+            line-height: 21px;
+            width: 82px;
+            height: 21px;
+            background: #0d6efd;
+            padding: 6px 12px 6px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        #Cfooter a:hover{
+            background: #0a58ca;
+        }
+        #footer{
+            width: 100%;
+            height: 120px;
+            margin-top: 48px;
+            background: rgb(37, 37, 37);
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top" class="d-flex">
+            <div class="width d-flex space-between">
+                <div id="top_left" class="d-flex align-self-center">Start Bootstrap</div>
+                <div id="top_right" class="d-flex">
+                    <div> <a href="" class="Twhite">Home    </a></div>
+                    <div> <a href="" class="Tgray">About   </a></div>
+                    <div> <a href="" class="Tgray">Contact </a></div>
+                    <div> <a href="" class="Tgray">Services</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="width">
+            <div id="Ctop" class="d-flex">
+                <div id="WxH"  class="mg20">900 x 400</div>
+                <div id="BNoT" class="d-flex column content-center mg20">
+                    <!-- <h1>Business Name or Tagline</h1> -->
+                    <h1>Business Name or Tagline</h1>
+                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                    <a href="">Call to Action!</a>
+                </div>
+            </div>
+            <div id="Ccontent" class="d-flex content-center align-item-center">
+                This call to action card is a great place to showcase some important information or display a clever tagline!
+            </div>
+            <div id="Cfooter" class="d-flex space-between">
+                <div id="Card1" class="card">
+                    <div class="cardtop">
+                        <h2>Card One</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                    <div class="cardfooter ">
+                        <a href="">More Info</a>
+                    </div>
+                </div>
+                <div id="Card2" class="card">
+                    <div class="cardtop">
+                        <h2>Card Two</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                    </div>
+                    <div class="cardfooter ">
+                        <a href="">More Info</a>
+                    </div>
+                </div>
+                <div id="Card3" class="card">
+                    <div class="cardtop">
+                        <h2>Card Three</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                    <div class="cardfooter">
+                        <a href="">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="d-flex content-center align-item-center">
+            Copyright © Your Website 2023
+        </div>
+    </div>
+</body>
+</html>
